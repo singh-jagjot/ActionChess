@@ -43,8 +43,8 @@ public class Board : MonoBehaviour
     private Animator whiteAnimator;
     private Animator blackAnimator;
     public static bool isBlackTurn = false;
-    private bool whiteTake = false;
-    private bool blackTake = false;
+    // private bool whiteTake = false;
+    // private bool blackTake = false;
     private GameObject blackKing;
     private GameObject whiteKing;
     private int cpuDifficulty = 1;
@@ -289,10 +289,10 @@ public class Board : MonoBehaviour
                 var go = pieceDict[sourceTile];
                 whitePieceAgent = go.GetComponent<NavMeshAgent>();
                 whiteAnimator = go.GetComponent<Animator>();
-                if (cb.IsCapture(sourceTile, destinationTile))
-                {
-                    whiteTake = true;
-                }
+                // if (cb.IsCapture(sourceTile, destinationTile))
+                // {
+                //     whiteTake = true;
+                // }
 
                 whitePieceAgent.acceleration = 1f;
                 whitePieceAgent.destination = tileDict[destinationTile].GetComponent<Collider>().bounds.center;
@@ -308,11 +308,11 @@ public class Board : MonoBehaviour
                 blackPieceAgent = go.GetComponent<NavMeshAgent>();
                 blackAnimator = go.GetComponent<Animator>();
 
-                if (cb.IsCapture(bm[0], bm[1]))
-                {
-                    blackTake = true;
-                    // AttackPiece(pieceDict[bm[0]], pieceDict[bm[1]]);
-                }
+                // if (cb.IsCapture(bm[0], bm[1]))
+                // {
+                //     blackTake = true;
+                //     // AttackPiece(pieceDict[bm[0]], pieceDict[bm[1]]);
+                // }
 
                 blackPieceAgent.acceleration = 1f;
                 blackPieceAgent.destination = tileDict[bm[1]].GetComponent<Collider>().bounds.center;
