@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace ChessAI
 {
+    [Serializable]
     public class ChessBoard
     {
         public const string StartFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";

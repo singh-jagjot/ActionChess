@@ -5897,11 +5897,11 @@ GameObject:
   - component: {fileID: 2928482875744382162}
   - component: {fileID: 5281505698344124577}
   - component: {fileID: 4606503942721997850}
-  - component: {fileID: 362758730658612710}
+  - component: {fileID: 3921006296015549962}
   - component: {fileID: 4066283560851180809}
   - component: {fileID: 6141586240395056760}
   m_Layer: 7
-  m_Name: Chess_Queen
+  m_Name: Chess_Queen2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6007,7 +6007,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &362758730658612710
+--- !u!114 &3921006296015549962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6016,7 +6016,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8435228705999252498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d24cda6baae4c8baab49f480c0db15, type: 3}
+  m_Script: {fileID: 11500000, guid: b93dd7c44fa2548ac992df77d595695f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathAudio: {fileID: 8300000, guid: 845cb08ed1ec847ea94b90d5c7e79f4e, type: 3}
